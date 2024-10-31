@@ -1,28 +1,27 @@
 # AppAdress
+AppAdress is a Python application designed to monitor active network connections of specified programs.
 
-This project helps you to see the connections between the applications active on your computer. 
+## Features
+- Network Connection List: Displays the current network connections of the specified program with IP addresses and port information.
+- Real-Time Monitoring: Allows real-time monitoring by updating connection data every 5 seconds.
+- Active Process Display: Provides a list of active programs on the system, making it easy to determine which applications are running.
+## Use Cases
+- System Management: Monitor network traffic to identify potential security threats.
+- Security Analysis: Monitor network connections of specific apps to prevent data leaks.
+## How to Use
+When you run the application, you will see a list of programs accessing your network. Enter the name of the program you want to monitor. The application will then update every 5 seconds and show the servers to which the specified application is connected, along with the ports used.
 
+- LADDR: Your IP address and port information.
+- RADDR: IP address and port information of the monitored application. 
+<br>
+<br>
+Data presented in the same row are associated links.
 
-The information in the " LADDR " section is your connection address.
+## Required Libraries
+- psutil
+- time
+- requests
 
-The information in the " RADDR " section is the connection address of the other party.
+<hr>
 
-I hope it will be useful for you, thank you.
-  
-## Requirements
-
-You can use this project by installing the following modules.
-
-## Screenshots
-
-My active applications, yours will be different.
-
-![Application Screenshot](https://cdn.discordapp.com/attachments/1122624935664300143/1154148104254275605/image.png)
-
-## Licence
-
-[MIT](https://choosealicense.com/licenses/mit/)
-  
-## Badges
-
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+<i>I welcome feedback and ideas for further development.<i>
